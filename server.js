@@ -17,4 +17,4 @@ app.get("/sendSMS", function (req, res) {
     .then((message) => res.send(`The message with id: ${message} was sent!`));
 });
 
-app.listen(3000);
+app.listen( process.env.PORT ||3000);
