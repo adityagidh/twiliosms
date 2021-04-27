@@ -22,9 +22,6 @@ const client = require('twilio')(accountSid, authToken);
 app.post("/sendSMS", (req, res, next) => {
     
     console.log(req.body.name);
-    // res.status(200).json({
-    //     "Name": req.body.name
-    // }); 
     client.messages 
     .create({ 
         body: `Criminal detected. Name: ${req.body.name}.`,  
