@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 
 
 const accountSid = 'AC5506ff75bf701114c0d7bac3e2b3694d'; 
-const authToken = '619cf9f6b015928f7fac3549589e945d'; 
+const authToken = 'dfccddeba1b9f64c93c551d8ed6088b7';
 const client = require('twilio')(accountSid, authToken); 
 app.post("/sendSMS", (req, res, next) => {
     
