@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 
 
-const accountSid = 'AC5506ff75bf701114c0d7bac3e2b3694d'; 
+const accountSid = 'AC5034f4aed62bd514c116e08ab613094c'; 
 const authToken = '0baac867637ab1d44d5c877c4a423f8b';
 const client = require('twilio')(accountSid, authToken); 
 app.post("/sendSMS", (req, res, next) => {
@@ -24,7 +24,7 @@ app.post("/sendSMS", (req, res, next) => {
     console.log(req.body.name);
     client.messages 
     .create({ 
-        body: `Criminal detected. Name: ${req.body.name}.`,  
+        body: `Intruder Detected. Check RAT TRAP APP`,  
         messagingServiceSid: 'MG64d2d8f2598c07c6325f6399d1e5b408',      
         to: '+919920211185' 
     }) 
